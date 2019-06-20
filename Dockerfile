@@ -6,6 +6,7 @@ RUN mkdir -p /usr/local/bin \
     && chown jenkins /usr/local/bin \
     && apt-get update \
     && apt-get install sudo \
+    && apt-get install zip \
     && echo "${pswd}\n${pswd}" | passwd \
     && echo "${pswd}\n${pswd}" | sudo passwd jenkins \
     && sudo adduser jenkins sudo
