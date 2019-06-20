@@ -13,8 +13,8 @@ RUN mkdir -p /usr/local/bin \
 USER jenkins
 WORKDIR /usr/local/bin
 RUN cd ~ \
-    && echo $(wget https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=download) \ 
-    && mv uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE gdrive \
+    && echo $(wget https://drive.google.com/uc?id=1Ej8VgsW5RgK66Btb9p74tSdHMH3p4UNb&export=download) \ 
+    && mv uc?id=1Ej8VgsW5RgK66Btb9p74tSdHMH3p4UNb gdrive \
     && chmod +x gdrive \
     && install gdrive /usr/local/bin/gdrive
 WORKDIR /var/jenkins_home
