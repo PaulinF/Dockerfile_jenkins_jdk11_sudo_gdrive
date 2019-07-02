@@ -7,6 +7,7 @@ RUN mkdir -p /usr/local/bin \
     && apt-get update \
     && apt-get install sudo \
     && apt-get install zip \
+    && apt-get install sshpass \
     && echo "${pswd}\n${pswd}" | passwd \
     && echo "${pswd}\n${pswd}" | sudo passwd jenkins \
     && sudo adduser jenkins sudo
